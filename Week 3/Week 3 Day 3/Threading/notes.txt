@@ -1,0 +1,13 @@
+When you launch the main page from two different browsers and withdraw 600 at the same time it will go to negative balance. 
+   Because the both browsers immediately check(one after another) if there is enough balance to do this withdraw first
+   and then wait 2 seconds and then withdraw the money. So the second withdraw test happens before first withdraw.
+
+Also uses synchronized keyword to make cpu sequential. If you comment out the syncronized and its both braces,
+it will be thread unsafe again.
+
+
+http://localhost:8080/WebApplication1/NewServlet
+
+http://localhost:8080/WebApplication1/NewServlet?action=deposit&amount=100
+
+http://localhost:8080/WebApplication1/NewServlet?action=withdraw&amount=100

@@ -1,0 +1,2 @@
+Notice how even when you close the tab the counter value stays. Because the servlet is not destroyed. You cant 
+ call the destroy(); methods explicitly. Servlet is destroyed when the server is closed/restarted.
