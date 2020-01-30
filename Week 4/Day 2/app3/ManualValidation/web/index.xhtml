@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <h:head>
+      <title>Index</title>
+   </h:head>
+   <h:body>
+      <center>
+         <h1>Create Customized Study Plan</h1><br/>
+         <h3>Enter Background and Interests</h3>
+         <h:form>
+            Email address: <h:inputText id="emailInputText" 
+               value="#{studyPlanBean.email}"/><h:message for="emailInputText"/> <br/>
+            Favorite language: <h:inputText id="favoriteLanguageInputText"  
+               value="#{studyPlanBean.favoriteLanguage}"/> <h:message for="favoriteLanguageInputText"/><br/>
+            Second favorite language: <h:selectOneMenu id="secondFavoriteLanguageSelectOneMenu" 
+               value="#{studyPlanBean.secondFavoriteLanguage}">
+               <f:selectItems value="#{studyPlanBean.languages}"/>
+            </h:selectOneMenu><br/>
+            Programmed for 5+ years? <h:selectBooleanCheckbox id="experience" value="#{studyPlanBean.highExperience}"/><br/>
+            Do you know James Gosling personally? <h:selectBooleanCheckbox id="jamesGosling" value="#{studyPlanBean.knowsJamesGosling}"/><br/>
+            <h:commandButton value="Submit" action="#{studyPlanBean.action()}"/>
+         </h:form>
+      </center>
+   </h:body>
+</html>

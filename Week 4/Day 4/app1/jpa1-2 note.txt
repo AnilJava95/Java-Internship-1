@@ -1,0 +1,5 @@
+i dont know if this was supposed to be continuation of the jpa program from the day before. 
+
+this one misses the insert part of the code for some reason. the jpa program from the day before tried doing jpa
+
+but it didnt work. try again.

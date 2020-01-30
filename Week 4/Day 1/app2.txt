@@ -1,0 +1,3 @@
+jsf app that has multiple pages. you keep pressing button to go between 2 pages, each time
+	you flip a coin, if you lose the program ends. if you win you keep going. you print
+	how many times you have gambled so far.
