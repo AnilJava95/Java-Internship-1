@@ -1,1 +1,1 @@
-Notes I took and programs I wrote during my first internship at OBSS. Core Java, Servlet, JSP.
+Notes I took and programs I wrote during my first internship. Core Java, Servlet, JSP.
